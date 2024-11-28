@@ -1,172 +1,361 @@
 * {
     margin: 0;
-    font-family: "Montserrant";
 }
 
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #F4F4F4;
+    box-sizing: border-box;
+}
+.header {
     background-color: black;
-    width: 100%;
-    height: 80px;
+    color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
     text-align: center;
+    }
+
+.hero-section {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hero-section-image {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-section--title--bg {
+    font-size: 70px;
+    color: #303030;
+    font-weight: bold;
+}
+
+.hero-section--title--sm {
+    font-size: 24px;
+    color: #ababab;
+    font-weight: bold;
+}
+
+.photos {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero-section {
-    margin-top: 120px;
-    text-align: center;
-}
-
-.title {
-    font-size: 70px;
-    font-weight: bold;
-    color: #303030;
-    margin-bottom: 8px;
-}
-
-.brown {
-    color: #ababab;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-}
-
-.hero-section--imges {
     gap: 20px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
 }
 
-.hero-section--imge {
-    width: 284px;
-    height: 400px;
-    border-radius: 12px;
-    margin-top: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.pp {
-    display: flex;
-    margin: auto;
-    margin-top: 240px;
-    justify-content: center;
+.photo {
 
 }
 
 .Destination {
-    width: 5px;
+    margin: auto;
+    margin-top: 240px;
+    max-width: 1200px;
     display: flex;
     gap: 150px;
 }
 
-h2 {
-    font-size: 48px;
-}
-
-h6 {
-    font-size: 16px;
-    gap: 4px;
-    margin: 0%;
-
-}
-
-p {
+.about1 {
     color: #ababab;
-    font-size: 12px;
-    margin: 0%;
+    font-size: 24px;
 }
 
-.Destination-steps {
-    margin-top: 80px;
+.about2 {
+    color: #303030;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.steps {
+    margin-top: 80px
 }
 
 .step {
     display: flex;
+    gap: 16px;
     align-items: center;
-    margin-top: 20px;
-    gap: 8px;
 }
 
-.step--day {
+.D {
     width: 56px;
     height: 56px;
-    background-color: #1d1f24;
-    color: #16a941;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.group26 {
-    margin-left: 24%;
-}
-
-.pooa h2 {
-    font-size: 48px;
+    color: #16A94A;
+    border-radius: 50%;
+    background-color:  #1D1F24;
     font-weight: 700;
-    line-height: 58.51px;
+    font-size: 17px;
+    display: flex;
+}
+
+.D:hover {
+    background-color: #16A94A;
+    color: #1D1F24;
+}
+
+.location {
+    display: block;
+}
+
+.loc {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.city {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.pricing--header{
+    margin-top: 240px;
+    text-align: center;
+}
+
+.cards {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
-    align-content: center;
-    cursor: pointer;
-}
-.card {
-    justify-content:center; 
-    min-width: 285;
-    margin-top: auto;
+    gap: 20px;
 }
 
-/* cursor uurchlogdoh  
- c    click me 
- margin: 20 px
- padding:12 px 20 px
- border-radius: 20 px
-  border-color: ogange
-  justify - content :center - <!--urd ni avcirna (hevtee neh'legin daguu golluulah )-->
-flex- direction
-align */
-@media screen and (min-width:600px){
+.pack {
+    font-size: 24px;
+    font-weight: 700;
 }
+
+.card1 {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 285px;
+    min-height: 370px;
+}
+
+.card2 {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 285px;
+    min-height: 370px;
+}
+
+.card1:hover {
+    border: #16A94A 2px solid;
+}
+
+.card2:hover {
+    border: #16A94A 2px solid;
+}
+
+.list {
+    color: #777777;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: left;
+}
+
+.price {
+    color: #303030;
+    font-size: 32px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+footer {
+    margin: auto;
+    margin-top: 240px;
+    padding: 150px 0;
+    text-align: center;
+    background-color: black;    
+    color: #ffffff;
+}
+
+.footer--header {
+    font-size: 32px;
+}
+ 
+.foot {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 120px;
+}
+
+.pinetour--logo {
+    width: 50px;
+    height: 42px;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button--order {
+    margin: auto;
+    background-color: #16A94A;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+}
+
+.button--order:hover {
+    background-color: lightblue;
+}
+
+.button--contact {
+    box-sizing: border-box;
+    background-color: #303030;
+    display: flex;
+    color: #ffffff;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 44px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (min-width:601px) and (max-width:1028px) {
-    .title--xl{
-        font-size: 36px;
-        
+    .hero-section--title--bg {
+        font-size: 48px;
     }
-    .title--lg{
-        font-size: 36px;
-    }
-    .subtext {
-        text-align: center;
+    .hero-section--title--sm {
         font-size: 18px;
     }
-    .hero-section--images{
+    .photos {
         flex-wrap: wrap;
     }
-    .hero-section--images img{
+    .photo {
         width: 284px;
-        height: 284px;
     }
-    .Destination{
-        justify-content: center;
-    }
-    .Destination--img{
+    .destination--img {
         display: none;
     }
-    .step {
+    .Destination {
         justify-content: center;
     }
-   
-}
-@media screen and (max-width: 600px) {
-    body {
-        background-color: #16a94a;
+    .about1 {
+        font-size: 16px;
+        text-align: center;
     }
-    
+    .about2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .steps {
+        justify-content: center;
+    }
+    .pinetour--logo {
+        width: 50px;
+        height: 42px;
+    }
+    .footer--header {
+        font-size: 24px;
+    }
+    .button--order {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .button--contact {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .logos {
+        gap: 10px;
+    }
 } 
-    
+
+@media screen and (max-width:600px) {
+    .hero-section--title--bg {
+        font-size: 32px;
+    }
+    .hero-section--title--sm {
+        font-size: 12px;
+    }
+    .photos {
+        flex-wrap: wrap;
+    }
+    .hero-section-image {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        width: 244px;
+    }
+    .destination--img {
+        display: none;
+    }
+    .Destination {
+        justify-content: center;
+    }   
+    .about1 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .about2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .steps {
+        justify-content: center;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+    .footer--header {
+        font-size: 16px;
+    }
+    .footer--header {
+        font-size: 24px;
+    }
+    .button--order {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .button--contact {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .logos {
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pinetour--logo--section {
+        display: flex;
+        justify-content: center;
+    }
+}   
